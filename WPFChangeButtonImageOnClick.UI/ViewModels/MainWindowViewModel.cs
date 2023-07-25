@@ -18,6 +18,7 @@ public class MainWindowViewModel : ViewModelBase
     #region Properties
 
     public string DemoText { get; }
+    public string DemoText2 { get; }
     #endregion
 
     #region Constructor
@@ -25,6 +26,7 @@ public class MainWindowViewModel : ViewModelBase
     public MainWindowViewModel()
     {
         DemoText = "Test1234";
+        DemoText2 = "Hallo";
     }
     #endregion
 

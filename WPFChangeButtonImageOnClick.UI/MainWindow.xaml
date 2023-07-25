@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:WPFChangeButtonImageOnClick.UI"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <StackPanel>
         <TextBlock Text="{Binding DemoText}"/>
-    </Grid>
+        <TextBlock Text="{Binding DemoText2}"/>
+    </StackPanel>
 </Window>
