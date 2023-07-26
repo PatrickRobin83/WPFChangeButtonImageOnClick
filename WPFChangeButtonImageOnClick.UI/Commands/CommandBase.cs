@@ -16,7 +16,6 @@ namespace WPFChangeButtonImageOnClick.UI.Commands;
 
 public abstract class CommandBase : ICommand
 {
-    #region Implementation of ICommand
 
     public event EventHandler? CanExecuteChanged;
     
@@ -28,6 +27,4 @@ public abstract class CommandBase : ICommand
     {
         CanExecuteChanged?.Invoke(this, new EventArgs());
     }
-    
-    #endregion
 }

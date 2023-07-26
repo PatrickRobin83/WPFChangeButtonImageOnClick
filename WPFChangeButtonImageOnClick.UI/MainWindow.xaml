@@ -4,10 +4,18 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFChangeButtonImageOnClick.UI"
+        xmlns:viewModels="clr-namespace:WPFChangeButtonImageOnClick.UI.ViewModels"
+        xmlns:components="clr-namespace:WPFChangeButtonImageOnClick.UI.Components"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type viewModels:GameBoardViewModel}">
+            <components:GameBoardView/>
+        </DataTemplate>
+    </Window.Resources>
     <StackPanel>
         <TextBlock Text="{Binding DemoText}"/>
         <TextBlock Text="{Binding DemoText2}"/>
+        <ContentControl Content="{Binding GameBoard}"/>
     </StackPanel>
 </Window>

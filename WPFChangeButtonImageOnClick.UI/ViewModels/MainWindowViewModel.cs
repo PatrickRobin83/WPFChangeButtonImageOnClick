@@ -19,6 +19,9 @@ public class MainWindowViewModel : ViewModelBase
 
     public string DemoText { get; }
     public string DemoText2 { get; }
+    
+    public ViewModelBase GameBoard { get; }
+    
     #endregion
 
     #region Constructor
@@ -27,6 +30,7 @@ public class MainWindowViewModel : ViewModelBase
     {
         DemoText = "Test1234";
         DemoText2 = "Hallo";
+        GameBoard = new GameBoardViewModel();
     }
     #endregion
 
